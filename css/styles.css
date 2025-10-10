@@ -1,0 +1,40 @@
+/* Personalizaciones adicionales sobre Bootstrap */
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Personalizar color primario si quieres */
+:root {
+    --bs-primary: #667eea;
+    --bs-primary-rgb: 102, 126, 234;
+}
+
+/* Animaciones suaves para las cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Badges con efecto hover */
+.badge {
+    transition: transform 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar shadow al hacer scroll */
+.navbar {
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
